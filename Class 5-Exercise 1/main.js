@@ -7,7 +7,7 @@ function outerFunction() {
 
 	function innerFunction() {
 		let innerVar = "I'm inside!";
-		console.log(outerVar); // Can we access outerVar? No, because this is within the local scope/function.
+		console.log(outerVar); // Can we access outerVar? Yes, because it is global and can be access and modified from any function.
 		console.log(innerVar); // Can we access innerVar? Yes, because this is local scope and within a function.
 	}
 
