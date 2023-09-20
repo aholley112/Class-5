@@ -7,16 +7,25 @@
 //Observe the behavior when calling both functions.
 
 // Declare a global variable here
-let globalVar = "Hello";
-console.log(globalVar);
+let favoriteColor = "Blue";
+console.log("My favorite color is " + favoriteColor)
 
 function modifyGlobal() {
-  console.log(globalVar); //Hello
 
-  //Try to modify the globalv ariable here
-  globalVar = "Hi";
+//Try to modify the global variable here
+ favoriteColor = "Green";
+ console.log("My favorite color is " + favoriteColor);
 }
 
-modifyGlobal();
+function localScope() {
+  const favoriteColor = "Red";
+  console.log("My favorite color is " + favoriteColor);
+}
+ 
+// Call both functions here
 
-console.log(globalVar);
+modifyGlobal();
+localScope();
+
+  
+ 
